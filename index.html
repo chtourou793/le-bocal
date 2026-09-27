@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102e26">
+  <meta name="description" content="Le Bocal, bistrot à Bar-le-Duc — 3 rue du Four.">
+  <title>Le Bocal — Bistrot à Bar-le-Duc</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar" aria-label="Présentation rapide">
+    <span>UN BISTROT. DES RENCONTRES. DE BONS MOMENTS.</span>
+    <span>BAR-LE-DUC <span aria-hidden="true">↗</span></span>
+  </div>
+
+  <header class="header" id="top">
+    <a href="#accueil" class="brand" aria-label="Le Bocal, accueil">
+      <img src="images/logo-bocal.png" alt="Logo Le Bocal">
+      <span class="brand-copy">
+        <span class="brand-name">Le Bocal</span>
+        <span class="brand-small">BISTROT À BAR-LE-DUC</span>
+      </span>
+    </a>
+
+    <button class="mobile-button" id="mobileButton" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+
+    <nav id="nav" aria-label="Navigation principale">
+      <a href="#lieu">Le lieu</a>
+      <a href="#carte">La carte</a>
+      <a href="#infos">Venir nous voir</a>
+      <button class="call-button openReservation" type="button">Nous appeler <span>↗</span></button>
+    </nav>
+  </header>
+
+  <main id="accueil">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <p class="eyebrow hero-eyebrow"><span></span>BISTROT · BAR-LE-DUC</p>
+
+        <h1 id="hero-title">On se retrouve<br>au <em>Bocal.</em></h1>
+
+        <p class="hero-copy">Un verre, une table, une conversation.<br>Les bons moments, tout simplement.</p>
+
+        <div class="hero-actions">
+          <a href="#carte" class="cream-button">Découvrir la carte <span>↗</span></a>
+          <button class="text-button openReservation" type="button">Une table ? Parlons-en <span>→</span></button>
+        </div>
+
+        <p class="hero-address"><span class="pin" aria-hidden="true">⌖</span>3 rue du Four, Bar-le-Duc</p>
+      </div>
+
+      <div class="hero-right">
+        <img src="images/facade.jpeg" alt="Façade du bistrot Le Bocal à Bar-le-Duc">
+        <a class="door-label" href="#infos">LA PORTE EST JUSTE ICI <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="place" id="lieu" aria-labelledby="place-title">
+      <div class="place-intro">
+        <div>
+          <p class="eyebrow">L’ESPRIT DU LIEU</p>
+          <h2 id="place-title">Poussez la porte.<br><em>Prenez le temps.</em></h2>
+        </div>
+
+        <div class="place-description">
+          <p>Du bois, des plantes, de grandes fenêtres sur la place. Au Bocal, on s’installe au comptoir ou autour d’une table, pour une pause et le plaisir de se retrouver.</p>
+          <a class="underline-link" href="#infos">Préparer votre visite <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <figure>
+          <div class="photo-wrap"><img src="images/facade copy.jpeg" alt="Un coin au soleil au Bocal" loading="lazy"></div>
+          <figcaption><span>Un coin au soleil</span><span>↗</span></figcaption>
+        </figure>
+        <figure>
+          <div class="photo-wrap"><img src="images/facade copy 5.jpeg" alt="Vue sur la place depuis Le Bocal" loading="lazy"></div>
+          <figcaption><span>La place en panorama</span><span>↗</span></figcaption>
+        </figure>
+        <figure>
+          <div class="photo-wrap"><img src="images/facade copy 4.jpeg" alt="Tables à l'intérieur du Bocal" loading="lazy"></div>
+          <figcaption><span>À votre table</span><span>↗</span></figcaption>
+        </figure>
+        <figure>
+          <div class="photo-wrap"><img src="images/facade copy 3.jpeg" alt="Le comptoir du Bocal" loading="lazy"></div>
+          <figcaption><span>Du côté du comptoir</span><span>↗</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="menu-section" id="carte" aria-labelledby="menu-title">
+      <div class="menu-inner">
+        <div class="menu-heading">
+          <div>
+            <p class="eyebrow">QU’EST-CE QU’ON VOUS SERT ?</p>
+            <h2 id="menu-title">À la carte, <em>au Bocal.</em></h2>
+            <p class="menu-subtitle">Du premier café au dernier verre. Toute notre carte, à votre rythme.</p>
+          </div>
+          <div class="menu-actions">
+            <a class="menu-download" href="documents/Le-Bocal-Carte-Complete.pdf" download>Télécharger la carte <span aria-hidden="true">↓</span><small>PDF · 5 pages</small></a>  
+          </div>
+        </div>
+
+        <!-- Sans JavaScript, les cinq catégories restent visibles. -->
+        <div class="menu-toolbar" hidden>
+          <div class="filters" role="group" aria-label="Choisir une catégorie de la carte">
+            <button data-filter="softs" type="button" aria-pressed="false" aria-controls="menu-categories"><span aria-hidden="true">01</span> Softs</button>
+            <button data-filter="mocktails" type="button" aria-pressed="false" aria-controls="menu-categories" aria-label="Mocktails, cafés et thés"><span aria-hidden="true">02</span> Mocktails</button>
+            <button data-filter="bieres" type="button" aria-pressed="false" aria-controls="menu-categories"><span aria-hidden="true">03</span> Bières</button>
+            <button data-filter="vins" type="button" aria-pressed="false" aria-controls="menu-categories" aria-label="Vins, apéritifs et digestifs"><span aria-hidden="true">04</span> Vins</button>
+            <button data-filter="cocktails" type="button" aria-pressed="false" aria-controls="menu-categories"><span aria-hidden="true">05</span> Cocktails</button>
+            <button data-filter="all" type="button" aria-pressed="false" aria-controls="menu-categories">Tout voir</button>
+          </div>
+        </div>
+        <p class="sr-only" id="menu-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="menu-categories">
+        <!-- 01 — SOFTS & BOISSONS ARTISANALES -->
+        <div class="menu-category" id="carte-softs" data-category="softs" aria-labelledby="title-softs">
+          <div class="menu-category-heading">
+            <div class="menu-category-copy">
+              <p class="eyebrow">LA CARTE · 01</p>
+              <h3 id="title-softs">Softs &amp; boissons artisanales</h3>
+              <p>Eaux, sirops, sodas, boissons bio &amp; jus.</p>
+            </div>
+            <img class="menu-illustration menu-illustration-softs" src="images/carte/sirops-botaniques.png" alt="" width="150" height="130" loading="lazy" decoding="async">
+          </div>
+          <div class="menu-columns">
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les eaux</h4></div>
+              
+              <article class="menu-product" data-pdf-row="0">
+                <div class="menu-product-heading"><h5>Eau minérale Evian · 50 cl</h5><strong class="menu-price">2,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="1">
+                <div class="menu-product-heading"><h5>Eau minérale Carola · 1 L</h5><strong class="menu-price">4,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="2">
+                <div class="menu-product-heading"><h5>Eau gazeuse · 33 cl</h5><strong class="menu-price">3,20 €</strong></div>
+                <p class="menu-description">Supplément citron : 0,20 €</p>
+              </article>
+            </div>
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les sirops bio</h4></div>
+              
+              <article class="menu-product" data-pdf-row="3">
+                <div class="menu-product-heading"><h5>Sirop bio</h5></div>
+                <p class="menu-description">33 cl : 2,50 €     ·     50 cl : 3,80 €</p>
+              </article><p class="menu-section-note menu-note-bottom">Menthe, grenadine, fraise, cerise, framboise, myrtille, cassis, pêche, passion, citron, fleurs de sureau, violette.</p><p class="menu-section-note menu-note-bottom">Sirops artisanaux de La Petite Sauvageonne (55) : géranium rosat, sapin, aurone, menthe bergamote.</p>
+            </div>
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les sodas</h4></div>
+              
+              <article class="menu-product" data-pdf-row="4">
+                <div class="menu-product-heading"><h5>Diabolo</h5></div>
+                <p class="menu-description">33 cl : 3 €     ·     50 cl : 4,50 €</p>
+              </article>
+              <article class="menu-product" data-pdf-row="5">
+                <div class="menu-product-heading"><h5>Limonade artisanale</h5></div>
+                <p class="menu-description">33 cl : 2,80 €     ·     50 cl : 4,20 €</p>
+              </article>
+              <article class="menu-product" data-pdf-row="6">
+                <div class="menu-product-heading"><h5>Ginger Ale artisanal bio · 33 cl</h5><strong class="menu-price">4 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="7">
+                <div class="menu-product-heading"><h5>Cola artisanal bio · 33 cl</h5><strong class="menu-price">4 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="8">
+                <div class="menu-product-heading"><h5>Coca-Cola · 33 cl</h5><strong class="menu-price">3,90 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="9">
+                <div class="menu-product-heading"><h5>Coca-Cola Zéro · 33 cl</h5><strong class="menu-price">3,90 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="10">
+                <div class="menu-product-heading"><h5>Red Bull · 25 cl</h5><strong class="menu-price">3,60 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="11">
+                <div class="menu-product-heading"><h5>Schweppes Agrumes · 25 cl</h5><strong class="menu-price">3,20 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="12">
+                <div class="menu-product-heading"><h5>Schweppes Tonic · 25 cl</h5><strong class="menu-price">3,20 €</strong></div>
+                
+              </article>
+            </div>
+            </div>
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Artisanales &amp; bio</h4></div>
+              
+              <article class="menu-product" data-pdf-row="13">
+                <div class="menu-product-heading"><h5>Symples · 33 cl</h5><strong class="menu-price">5,50 €</strong></div>
+                <p class="menu-description">Infusions pétillantes artisanales et locales · Meurthe-et-Moselle (54).</p>
+              </article><p class="menu-section-note menu-note-bottom">Énergisante : thym, menthe poivrée, citron<br>Détox : sauge, sureau, pomme<br>Relax : cerise, verveine<br>Menthe douce</p>              <article class="menu-product" data-pdf-row="14">
+                <div class="menu-product-heading"><h5>R-Kombucha bio · 33 cl</h5><strong class="menu-price">5,70 €</strong></div>
+                <p class="menu-description">Framboise et citron vert<br>Gingembre et curcuma</p>
+              </article>
+              <article class="menu-product" data-pdf-row="15">
+                <div class="menu-product-heading"><h5>Kéfir d’eau et de fruits bio · 25 cl</h5><strong class="menu-price">5,20 €</strong></div>
+                <p class="menu-description">Framboise ou gingembre</p>
+              </article>
+            </div>
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les jus</h4></div>
+              
+              <article class="menu-product" data-pdf-row="16">
+                <div class="menu-product-heading"><h5>Orange pressée · 20 cl</h5><strong class="menu-price">4 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="17">
+                <div class="menu-product-heading"><h5>Citron pressé · 33 cl</h5><strong class="menu-price">3 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="18">
+                <div class="menu-product-heading"><h5>Cocktail de fraises bio · 25 cl</h5><strong class="menu-price">4,70 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="19">
+                <div class="menu-product-heading"><h5>Ananas bio · 25 cl</h5><strong class="menu-price">4,70 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="20">
+                <div class="menu-product-heading"><h5>Pamplemousse bio</h5><strong class="menu-price">4,70 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="21">
+                <div class="menu-product-heading"><h5>Tomate bio · 25 cl</h5><strong class="menu-price">4,70 €</strong></div>
+                <p class="menu-description">Céleri et Tabasco</p>
+              </article>
+              <article class="menu-product" data-pdf-row="22">
+                <div class="menu-product-heading"><h5>Multifruits bio · 25 cl</h5><strong class="menu-price">4,70 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="23">
+                <div class="menu-product-heading"><h5>Pomme bio · 25 cl</h5><strong class="menu-price">4,70 €</strong></div>
+                
+              </article>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02 — MOCKTAILS, CAFÉS & THÉS -->
+        <div class="menu-category" id="carte-mocktails" data-category="mocktails" aria-labelledby="title-mocktails">
+          <div class="menu-category-heading">
+            <div class="menu-category-copy">
+              <p class="eyebrow">LA CARTE · 02</p>
+              <h3 id="title-mocktails">Mocktails, cafés &amp; thés</h3>
+              <p>Cocktails sans alcool, boissons chaudes &amp; estivales.</p>
+            </div>
+            <img class="menu-illustration menu-illustration-mocktails" src="images/carte/cafe-botanique.png" alt="" width="150" height="130" loading="lazy" decoding="async">
+          </div>
+          <div class="menu-columns">
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les mocktails</h4></div>
+              <p class="menu-section-note">Cocktails sans alcool</p>
+              <article class="menu-product" data-pdf-row="24">
+                <div class="menu-product-heading"><h5>Virgin Mojito</h5><strong class="menu-price">7 €</strong></div>
+                <p class="menu-description">Menthe, citron vert, eau gazeuse, sirop de canne.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="25">
+                <div class="menu-product-heading"><h5>Virgin Mojito framboises / fraises</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Framboises / fraises, menthe, citron vert, sirop de canne.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="26">
+                <div class="menu-product-heading"><h5>Sunset</h5><strong class="menu-price">7 €</strong></div>
+                <p class="menu-description">Jus d’ananas, grenadine, citron vert, eau gazeuse.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="27">
+                <div class="menu-product-heading"><h5>Virgin Paloma</h5><strong class="menu-price">7 €</strong></div>
+                <p class="menu-description">Jus de pamplemousse, citron vert, sirop d’agave, eau gazeuse.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="28">
+                <div class="menu-product-heading"><h5>Fizz pamplemousse</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Jus de pamplemousse, framboises, sirop de canne, eau gazeuse.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="29">
+                <div class="menu-product-heading"><h5>Virgin Cosmo</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Jus de cranberry, jus d’orange, citron vert, limonade.</p>
+              </article>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Boissons chaudes</h4></div>
+              
+              <article class="menu-product" data-pdf-row="30">
+                <div class="menu-product-heading"><h5>Espresso bio</h5><strong class="menu-price">1,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="31">
+                <div class="menu-product-heading"><h5>Double espresso bio</h5><strong class="menu-price">3 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="32">
+                <div class="menu-product-heading"><h5>Allongé</h5><strong class="menu-price">2 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="33">
+                <div class="menu-product-heading"><h5>Latte</h5><strong class="menu-price">2,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="34">
+                <div class="menu-product-heading"><h5>Noisette</h5><strong class="menu-price">2 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="35">
+                <div class="menu-product-heading"><h5>Cappuccino</h5><strong class="menu-price">2,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="36">
+                <div class="menu-product-heading"><h5>Latte macchiato</h5><strong class="menu-price">4 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="37">
+                <div class="menu-product-heading"><h5>Café viennois</h5><strong class="menu-price">2,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="38">
+                <div class="menu-product-heading"><h5>Chocolat chaud</h5><strong class="menu-price">3 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="39">
+                <div class="menu-product-heading"><h5>Chocolat viennois</h5><strong class="menu-price">3,50 €</strong></div>
+                
+              </article>
+            </div>
+            </div>
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Boissons estivales</h4></div>
+              
+              <article class="menu-product" data-pdf-row="40">
+                <div class="menu-product-heading"><h5>Café glacé</h5><strong class="menu-price">3 €</strong></div>
+                <p class="menu-description">Americano, glaçons, sirop sur demande.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="41">
+                <div class="menu-product-heading"><h5>Café frappé</h5><strong class="menu-price">4 €</strong></div>
+                <p class="menu-description">Double espresso, glaçons, au shaker, sirop sur demande.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="42">
+                <div class="menu-product-heading"><h5>Thé glacé maison bio · 33 cl</h5><strong class="menu-price">3,50 €</strong></div>
+                <p class="menu-description">Selon disponibilité. Non sucré ; sirop sur demande.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="43">
+                <div class="menu-product-heading"><h5>Thé glacé pêche artisanal bio · 33 cl</h5><strong class="menu-price">4 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="44">
+                <div class="menu-product-heading"><h5>Ice Tea pêche · 25 cl</h5><strong class="menu-price">3,20 €</strong></div>
+                
+              </article>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Thés &amp; infusions bio</h4><strong class="menu-price">3 €</strong></div>
+              
+<div class="menu-producer"><p>Les Jardins de Gaïa</p><span>Bas-Rhin (67)</span></div>              <article class="menu-product" data-pdf-row="45">
+                <div class="menu-product-heading"><h5>Thé vert Parfum de Médina</h5></div>
+                <p class="menu-description">Menthe douce</p>
+              </article>
+              <article class="menu-product" data-pdf-row="46">
+                <div class="menu-product-heading"><h5>Thé vert fleurs Dhyana Air</h5></div>
+                <p class="menu-description">Pétales de rose, fleur de sureau, violette</p>
+              </article>
+              <article class="menu-product" data-pdf-row="47">
+                <div class="menu-product-heading"><h5>Thé blanc Rêve de femme</h5></div>
+                <p class="menu-description">Mangue et pêche</p>
+              </article>
+              <article class="menu-product" data-pdf-row="48">
+                <div class="menu-product-heading"><h5>Thé noir Finest Earl Grey</h5></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="49">
+                <div class="menu-product-heading"><h5>Thé rouge Murmure de la Forêt</h5></div>
+                <p class="menu-description">Fraise et mûre</p>
+              </article><div class="menu-producer"><p>L’Herberie de la Saulx</p><span>Infusions bio · Meuse (55)</span></div><p class="menu-section-note menu-note-bottom">Verveine, reine des prés, menthe poivrée, calendula, mauve.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 03 — BIÈRES ARTISANALES & À PARTAGER -->
+        <div class="menu-category" id="carte-bieres" data-category="bieres" aria-labelledby="title-bieres">
+          <div class="menu-category-heading">
+            <div class="menu-category-copy">
+              <p class="eyebrow">LA CARTE · 03</p>
+              <h3 id="title-bieres">Bières artisanales &amp; à partager</h3>
+              <p>À la pression ou en bouteille, avec une petite faim.</p>
+            </div>
+            <img class="menu-illustration menu-illustration-bieres" src="images/carte/biere-botanique.png" alt="" width="150" height="130" loading="lazy" decoding="async">
+          </div>
+          <div class="menu-columns">
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Bières pression</h4></div>
+              <p class="menu-section-note">Brasserie La Mandale · Dompcevrin · Meuse (55)<br>Brasserie de la Valée de la Saulx Morlay Meuse 55</p>
+              <table class="menu-table menu-table-beer">
+                <thead><tr><th scope="col"><span class="sr-only">Boisson</span></th><th scope="col">25 cl</th><th scope="col">33 cl</th><th scope="col">50 cl</th></tr></thead>
+                <tbody>
+                  <tr class="menu-product" data-pdf-row="50"><th scope="row"><span class="menu-table-name">Blonde</span><span class="menu-description">5,5 %</span></th><td class="menu-price">3,50 €</td><td class="menu-price">4,60 €</td><td class="menu-price">7 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="51"><th scope="row"><span class="menu-table-name">Ambrée</span><span class="menu-description">4 %</span></th><td class="menu-price">4 €</td><td class="menu-price">5,30 €</td><td class="menu-price">8 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="52"><th scope="row"><span class="menu-table-name">Rouge</span><span class="menu-description">Framboise, hibiscus · 5,5 %</span></th><td class="menu-price">4 €</td><td class="menu-price">5,30 €</td><td class="menu-price">8 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="53"><th scope="row"><span class="menu-table-name">IPA</span><span class="menu-description">6 %</span></th><td class="menu-price">4 €</td><td class="menu-price">5,30 €</td><td class="menu-price">8 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="54"><th scope="row"><span class="menu-table-name">Blonde gingembre</span><span class="menu-description">5,5 %</span></th><td class="menu-price">4 €</td><td class="menu-price">5,30 €</td><td class="menu-price">8 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="55"><th scope="row"><span class="menu-table-name">Triple</span><span class="menu-description">Selon disponibilité</span></th><td class="menu-price">5 €</td><td class="menu-price">6,60 €</td><td class="menu-price">10 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="56"><th scope="row"><span class="menu-table-name">Panaché</span></th><td class="menu-price">3,50 €</td><td class="menu-price">4,60 €</td><td class="menu-price">7 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="57"><th scope="row"><span class="menu-table-name">Monaco</span></th><td class="menu-price">3,70 €</td><td class="menu-price">4,90 €</td><td class="menu-price">7,40 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="58"><th scope="row"><span class="menu-table-name">Picon</span></th><td class="menu-price">3,90 €</td><td class="menu-price">5,20 €</td><td class="menu-price">7,80 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="59"><th scope="row"><span class="menu-table-name">Bière sirop</span></th><td class="menu-price">3,70 €</td><td class="menu-price">4,90 €</td><td class="menu-price">7,40 €</td></tr>
+                </tbody>
+              </table>              <article class="menu-product" data-pdf-row="60">
+                <div class="menu-product-heading"><h5>Galopin blonde · 12 cl</h5><strong class="menu-price">2,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="61">
+                <div class="menu-product-heading"><h5>Galopin Picon · 12 cl</h5><strong class="menu-price">2,80 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="62">
+                <div class="menu-product-heading"><h5>Girafe blonde · 3 L</h5><strong class="menu-price">38 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="63">
+                <div class="menu-product-heading"><h5>Girafe bières spéciales · 3 L</h5><strong class="menu-price">43 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="64">
+                <div class="menu-product-heading"><h5>Girafe Triple · 3 L</h5><strong class="menu-price">53 €</strong></div>
+                <p class="menu-description">Selon disponibilité</p>
+              </article>
+            </div>            <aside class="happy-hour" aria-labelledby="happy-hour-title">
+              <div class="happy-hour-heading"><h4 id="happy-hour-title">Happy Hour</h4><span>18 H - 20 H</span></div>
+              <dl class="happy-hour-prices">
+                <div><dt>Pinte blonde</dt><dd>5,50 €</dd></div>
+                <div><dt>Pinte spéciale</dt><dd>6,10 €</dd></div>
+                <div><dt>Pinte sirop à l’eau</dt><dd>2,80 €</dd></div>
+              </dl>
+              <p>Hors bière Triple et bière sirop.</p>
+            </aside>
+            </div>
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Bières bouteilles</h4></div>
+              
+<div class="menu-producer"><p>Brasserie Barisienne BRA’BAR</p><span>33 cl</span></div>              <article class="menu-product" data-pdf-row="65">
+                <div class="menu-product-heading"><h5>Pils de Bohême au miel et tilleul</h5><strong class="menu-price">5,80 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="66">
+                <div class="menu-product-heading"><h5>IPA au miel jasmin</h5><strong class="menu-price">6,10 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="67">
+                <div class="menu-product-heading"><h5>Bière de table à la fleur de pensée</h5><strong class="menu-price">5,50 €</strong></div>
+                
+              </article><div class="menu-producer"><p>Brasserie Coin-Coin bio</p><span>33 cl · Meurthe-et-Moselle (54)</span></div>              <article class="menu-product" data-pdf-row="68">
+                <div class="menu-product-heading"><h5>Blanche</h5><strong class="menu-price">7 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="69">
+                <div class="menu-product-heading"><h5>Brune</h5><strong class="menu-price">7,40 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="70">
+                <div class="menu-product-heading"><h5>Triple</h5><strong class="menu-price">7,40 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="71">
+                <div class="menu-product-heading"><h5>Ambrée safranée</h5><strong class="menu-price">7,40 €</strong></div>
+                
+              </article><div class="menu-producer"><p>Brasserie Chaoûette bio</p><span>33 cl · Meurthe-et-Moselle (54)</span></div>              <article class="menu-product" data-pdf-row="72">
+                <div class="menu-product-heading"><h5>Blonde</h5><strong class="menu-price">5,10 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="73">
+                <div class="menu-product-heading"><h5>Rousse cardamome</h5><strong class="menu-price">5,10 €</strong></div>
+                
+              </article><div class="menu-producer"><p>Brasserie Tumulte bio</p><span>33 cl · Meurthe-et-Moselle (54)</span></div>              <article class="menu-product" data-pdf-row="74">
+                <div class="menu-product-heading"><h5>Rousse</h5><strong class="menu-price">6 €</strong></div>
+                
+              </article><div class="menu-producer"><p>Bières sans alcool bio</p><span>Brasserie Parallèle · 33 cl</span></div>              <article class="menu-product" data-pdf-row="75">
+                <div class="menu-product-heading"><h5>Blonde</h5><strong class="menu-price">6,80 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="76">
+                <div class="menu-product-heading"><h5>Blanche</h5><strong class="menu-price">6,80 €</strong></div>
+                
+              </article>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Une petite faim ?</h4></div>
+              
+              <article class="menu-product" data-pdf-row="77">
+                <div class="menu-product-heading"><h5>Planche mixte</h5><strong class="menu-price">15 €</strong></div>
+                <p class="menu-description">Fromages et charcuteries 100 % locaux.<br>Ferme des Terres Froides et Dongé (fromages) ; La Maison du Cochon et GAEC des Raillis (charcuterie).</p>
+              </article>
+              <article class="menu-product" data-pdf-row="78">
+                <div class="menu-product-heading"><h5>Cacahuètes / chips</h5><strong class="menu-price">1,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="79">
+                <div class="menu-product-heading"><h5>Olives bio</h5><strong class="menu-price">3 €</strong></div>
+                <p class="menu-description">Grèce · Ail et herbes aromatiques.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="80">
+                <div class="menu-product-heading"><h5>Glaces / sorbets</h5><strong class="menu-price">3 € / boule</strong></div>
+                <p class="menu-description">Producteurs : Val d’Ornain, Ô Maribelle.</p>
+              </article>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 04 — VINS, APÉRITIFS & DIGESTIFS -->
+        <div class="menu-category" id="carte-vins" data-category="vins" aria-labelledby="title-vins">
+          <div class="menu-category-heading">
+            <div class="menu-category-copy">
+              <p class="eyebrow">LA CARTE · 04</p>
+              <h3 id="title-vins">Vins, apéritifs &amp; digestifs</h3>
+              <p>Au verre, à la bouteille, pour commencer ou prolonger.</p>
+            </div>
+            <img class="menu-illustration menu-illustration-vins" src="images/carte/vin-botanique.png" alt="" width="150" height="130" loading="lazy" decoding="async">
+          </div>
+          <div class="menu-columns">
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Vins rouges</h4></div>
+              
+              <table class="menu-table menu-table-wine">
+                <thead><tr><th scope="col"><span class="sr-only">Boisson</span></th><th scope="col">12,5 cl</th><th scope="col">75 cl</th></tr></thead>
+                <tbody>
+                  <tr class="menu-product" data-pdf-row="81"><th scope="row"><span class="menu-table-name">UBY Côtes de Gascogne IGP</span><span class="menu-description">Sud-Ouest · 13 %</span></th><td class="menu-price">3,50 €</td><td class="menu-price">/</td></tr>
+                  <tr class="menu-product" data-pdf-row="82"><th scope="row"><span class="menu-table-name">Château Pénin</span><span class="menu-description">Bordeaux Supérieur · 12,5 %</span></th><td class="menu-price">4 €</td><td class="menu-price">/</td></tr>
+                  <tr class="menu-product" data-pdf-row="83"><th scope="row"><span class="menu-table-name">Vin de Pétanque bio</span><span class="menu-description">Vallée du Rhône · Biodynamique · 12,5 %</span></th><td class="menu-price">5,50 €</td><td class="menu-price">33 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="84"><th scope="row"><span class="menu-table-name">Saint-Nicolas-de-Bourgueil AOC</span><span class="menu-description">Loire · 12,5 %</span></th><td class="menu-price">5,50 €</td><td class="menu-price">32 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="85"><th scope="row"><span class="menu-table-name">Domaine de Muzy Pinot noir</span><span class="menu-description">IGP Côtes de Meuse · Bio · 12,4 %</span></th><td class="menu-price">6 €</td><td class="menu-price">36 €</td></tr>
+                </tbody>
+              </table>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Vins blancs</h4></div>
+              
+              <table class="menu-table menu-table-wine">
+                <thead><tr><th scope="col"><span class="sr-only">Boisson</span></th><th scope="col">12,5 cl</th><th scope="col">75 cl</th></tr></thead>
+                <tbody>
+                  <tr class="menu-product" data-pdf-row="86"><th scope="row"><span class="menu-table-name">Le Lys Blanc d’Arjolle</span><span class="menu-description">Côtes de Thongue IGP · 12,5 %</span></th><td class="menu-price">3,50 €</td><td class="menu-price">/</td></tr>
+                  <tr class="menu-product" data-pdf-row="87"><th scope="row"><span class="menu-table-name">UBY Côtes de Gascogne IGP</span><span class="menu-description">Tendre · Sud-Ouest · 12 %</span></th><td class="menu-price">3,50 €</td><td class="menu-price">/</td></tr>
+                  <tr class="menu-product" data-pdf-row="88"><th scope="row"><span class="menu-table-name">La Poule aux œufs d’Or</span><span class="menu-description">Moelleux · Sud-Ouest · 12,5 %</span></th><td class="menu-price">4,40 €</td><td class="menu-price">26 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="89"><th scope="row"><span class="menu-table-name">Tariquet 1ères Grives</span><span class="menu-description">Moelleux · Sud-Ouest · 10,5 %</span></th><td class="menu-price">4,50 €</td><td class="menu-price">26,50 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="90"><th scope="row"><span class="menu-table-name">Les Marpaux · Domaine de Muzy</span><span class="menu-description">IGP Côtes de Meuse · Bio · 12,8 %</span></th><td class="menu-price">4,70 €</td><td class="menu-price">28 €</td></tr>
+                  <tr class="menu-product" data-pdf-row="91"><th scope="row"><span class="menu-table-name">Sauvignon L’Éclos</span><span class="menu-description">Fruité · Vallée de la Loire · Bio · 12,5 %</span></th><td class="menu-price">5 €</td><td class="menu-price">30 €</td></tr>
+                </tbody>
+              </table>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Vins rosés</h4></div>
+              
+              <table class="menu-table menu-table-wine">
+                <thead><tr><th scope="col"><span class="sr-only">Boisson</span></th><th scope="col">12,5 cl</th><th scope="col">75 cl</th></tr></thead>
+                <tbody>
+                  <tr class="menu-product" data-pdf-row="92"><th scope="row"><span class="menu-table-name">L’Arjolle Rosé</span><span class="menu-description">IGP Côtes de Thongue · 12 %</span></th><td class="menu-price">3,50 €</td><td class="menu-price">/</td></tr>
+                  <tr class="menu-product" data-pdf-row="93"><th scope="row"><span class="menu-table-name">Le Chant des Grillons</span><span class="menu-description">IGP Côtes de Thongue · 12,5 %</span></th><td class="menu-price">5 €</td><td class="menu-price">30,20 €</td></tr>
+                </tbody>
+              </table>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Champagne</h4></div>
+              
+              <table class="menu-table menu-table-wine">
+                <thead><tr><th scope="col"><span class="sr-only">Boisson</span></th><th scope="col">12,5 cl</th><th scope="col">75 cl</th></tr></thead>
+                <tbody>
+                  <tr class="menu-product" data-pdf-row="94"><th scope="row"><span class="menu-table-name">Champagne Dauvergne</span><span class="menu-description">Bouzy · Brut · 12,5 %</span></th><td class="menu-price">/</td><td class="menu-price">60 €</td></tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Apéritifs</h4></div>
+              
+              <article class="menu-product" data-pdf-row="95">
+                <div class="menu-product-heading"><h5>Kir mûre ou cassis</h5><strong class="menu-price">4 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="96">
+                <div class="menu-product-heading"><h5>Ricard · 2 cl</h5><strong class="menu-price">2,50 €</strong></div>
+                <p class="menu-description">Supplément sirop : 0,20 €</p>
+              </article>
+              <article class="menu-product" data-pdf-row="97">
+                <div class="menu-product-heading"><h5>Lirette Montgrignon · 4 cl</h5><strong class="menu-price">4 €</strong></div>
+                <p class="menu-description">Meuse (55)</p>
+              </article>
+              <article class="menu-product" data-pdf-row="98">
+                <div class="menu-product-heading"><h5>Martini blanc · 4 cl</h5><strong class="menu-price">3 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="99">
+                <div class="menu-product-heading"><h5>Suze · 4 cl</h5><strong class="menu-price">3 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="100">
+                <div class="menu-product-heading"><h5>Gin · 4 cl</h5><strong class="menu-price">3 €</strong></div>
+                <p class="menu-description">Distillerie Ker Marson · Meuse (55)</p>
+              </article>
+              <article class="menu-product" data-pdf-row="101">
+                <div class="menu-product-heading"><h5>Limoncello</h5><strong class="menu-price">4,50 €</strong></div>
+                
+              </article>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Digestifs</h4></div>
+              
+              <article class="menu-product" data-pdf-row="102">
+                <div class="menu-product-heading"><h5>Mirabelle bio · 3 cl</h5><strong class="menu-price">5 €</strong></div>
+                <p class="menu-description">Domaine de Muzy · Meuse (55)</p>
+              </article>
+              <article class="menu-product" data-pdf-row="103">
+                <div class="menu-product-heading"><h5>Absinthe · 2 cl</h5><strong class="menu-price">5 €</strong></div>
+                <p class="menu-description">Distillerie Ker Marson · Meuse (55)</p>
+              </article>
+              <article class="menu-product" data-pdf-row="104">
+                <div class="menu-product-heading"><h5>Rhum arrangé · 3 cl</h5><strong class="menu-price">5 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="105">
+                <div class="menu-product-heading"><h5>Whisky lorrain Rozelieures · 4 cl</h5><strong class="menu-price">7,30 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="106">
+                <div class="menu-product-heading"><h5>Scotch Monkey Shoulder · 4 cl</h5><strong class="menu-price">5,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="107">
+                <div class="menu-product-heading"><h5>Bourbon Four Roses · 4 cl</h5><strong class="menu-price">4,40 €</strong></div>
+                <p class="menu-description">Kentucky</p>
+              </article>
+              <article class="menu-product" data-pdf-row="108">
+                <div class="menu-product-heading"><h5>Whisky Redbreast · 4 cl</h5><strong class="menu-price">14 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="109">
+                <div class="menu-product-heading"><h5>Shooter · 3 cl</h5><strong class="menu-price">3 €</strong></div>
+                <p class="menu-description">Vodka, tequila, Jägermeister, Jet 27, etc.</p>
+              </article>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 05 — LES COCKTAILS -->
+        <div class="menu-category" id="carte-cocktails" data-category="cocktails" aria-labelledby="title-cocktails">
+          <div class="menu-category-heading">
+            <div class="menu-category-copy">
+              <p class="eyebrow">LA CARTE · 05</p>
+              <h3 id="title-cocktails">Les cocktails</h3>
+              <p>Les pétillants, les tropicaux, les classiques &amp; les recettes au café.</p>
+            </div>
+            <img class="menu-illustration menu-illustration-cocktails" src="images/carte/mojito-botanique.png" alt="" width="150" height="130" loading="lazy" decoding="async">
+          </div>
+          <div class="menu-columns">
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les pétillants</h4></div>
+              
+              <article class="menu-product" data-pdf-row="110">
+                <div class="menu-product-heading"><h5>Les Mules</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Moscow / Jamaican / London / Mexican<br>Vodka / rhum / gin / tequila, ginger beer, citron vert.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="111">
+                <div class="menu-product-heading"><h5>Gin / Suze / Mirabelle Tonic</h5><strong class="menu-price">7,50 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="112">
+                <div class="menu-product-heading"><h5>Mojito</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Rhum blanc, menthe, citron vert, eau gazeuse, sirop de canne.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="113">
+                <div class="menu-product-heading"><h5>Mojito framboises</h5><strong class="menu-price">8,50 €</strong></div>
+                <p class="menu-description">Rhum blanc, framboises, menthe, citron vert, sirop de canne.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="114">
+                <div class="menu-product-heading"><h5>Aperol Spritz</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Apérol, prosecco, eau gazeuse, rondelle d’orange.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="115">
+                <div class="menu-product-heading"><h5>Hugo Spritz</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Liqueur de sureau, prosecco, eau gazeuse, rondelle de citron vert.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="116">
+                <div class="menu-product-heading"><h5>Gin / Mirabelle Fizz</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Gin / mirabelle, citron jaune, sirop de canne, eau gazeuse.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="117">
+                <div class="menu-product-heading"><h5>Vodka Red Bull</h5><strong class="menu-price">7 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="118">
+                <div class="menu-product-heading"><h5>Jäger Bomb · 4 cl</h5><strong class="menu-price">7 €</strong></div>
+                <p class="menu-description">Jägermeister, Red Bull.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="119">
+                <div class="menu-product-heading"><h5>Whisky Coca · 4 cl</h5><strong class="menu-price">7 €</strong></div>
+                
+              </article>
+              <article class="menu-product" data-pdf-row="120">
+                <div class="menu-product-heading"><h5>Batanga</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Tequila, citron vert, coca.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="121">
+                <div class="menu-product-heading"><h5>Cuba Libre</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Rhum blanc ou ambré, citron vert, coca.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="122">
+                <div class="menu-product-heading"><h5>Americano</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Campari, vermouth rouge, eau gazeuse, zeste d’orange.</p>
+              </article>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Au café</h4></div>
+              
+              <article class="menu-product" data-pdf-row="123">
+                <div class="menu-product-heading"><h5>Espresso Martini</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Vodka, Baileys, espresso, sirop de canne.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="124">
+                <div class="menu-product-heading"><h5>Irish Coffee</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Whisky, café, sirop de canne, chantilly.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="125">
+                <div class="menu-product-heading"><h5>Russe blanc</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Vodka, Kahlúa, crème liquide.</p>
+              </article>
+            </div>
+            </div>
+            <div class="menu-column">
+            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les tropicaux</h4></div>
+              
+              <article class="menu-product" data-pdf-row="126">
+                <div class="menu-product-heading"><h5>Daiquiri</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Rhum, citron vert, sirop de canne.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="127">
+                <div class="menu-product-heading"><h5>Caïpirinha</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Cachaça, citron vert, sirop de canne.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="128">
+                <div class="menu-product-heading"><h5>Piña Colada</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Rhum blanc, jus d’ananas, crème de coco.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="129">
+                <div class="menu-product-heading"><h5>Madeleine</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Amaretto, triple sec, jus d’ananas.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="130">
+                <div class="menu-product-heading"><h5>Mai Tai</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Cointreau, rhum blanc, rhum ambré, sirop d’orgeat, citron vert.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="131">
+                <div class="menu-product-heading"><h5>Sex on the Beach</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Vodka, crème de pêche, jus de cranberry, jus d’orange.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="132">
+                <div class="menu-product-heading"><h5>Sex on the Beach Caraïbes</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Rhum, crème de pêche, cranberry, jus d’orange.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="133">
+                <div class="menu-product-heading"><h5>Blue Lagoon</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Vodka, curaçao bleu, citron jaune.</p>
+              </article>
+            </div>            <div class="menu-subsection">
+              <div class="menu-subsection-heading"><h4>Les autres classiques</h4></div>
+              
+              <article class="menu-product" data-pdf-row="134">
+                <div class="menu-product-heading"><h5>Bloody Mary</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Vodka, jus de tomate, sel de céleri, Tabasco, sauce Worcestershire.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="135">
+                <div class="menu-product-heading"><h5>Dry Martini</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Gin, vermouth blanc sec, olive verte ou zeste de citron jaune.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="136">
+                <div class="menu-product-heading"><h5>Negroni</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Gin, Campari, vermouth rouge, zeste d’orange.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="137">
+                <div class="menu-product-heading"><h5>Cosmopolitan</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Vodka, Cointreau, jus de cranberry, citron vert.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="138">
+                <div class="menu-product-heading"><h5>Margarita</h5><strong class="menu-price">7,50 €</strong></div>
+                <p class="menu-description">Vodka, Cointreau, citron vert.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="139">
+                <div class="menu-product-heading"><h5>Manhattan</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Whisky, vermouth rouge, zeste d’orange.</p>
+              </article>
+              <article class="menu-product" data-pdf-row="140">
+                <div class="menu-product-heading"><h5>Old Fashioned</h5><strong class="menu-price">8 €</strong></div>
+                <p class="menu-description">Bourbon, zeste d’orange.</p>
+              </article>
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="menu-bottom">
+          <p>Envie de garder la carte à portée de main ?</p>
+          <a href="documents/Le-Bocal-Carte-Complete.pdf" download>La carte complète en PDF <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="infos" aria-labelledby="visit-title">
+      <div class="visit-inner">
+        <div class="visit-heading">
+          <p class="eyebrow accent">ON VOUS GARDE UNE PLACE DANS LA CONVERSATION</p>
+          <h2 id="visit-title">À bientôt <em>au Bocal.</em></h2>
+          <p>Toutes les informations pour préparer votre venue.</p>
+        </div>
+
+        <div class="visit-grid">
+          <div class="address-card">
+            <p class="eyebrow accent">01 — NOUS TROUVER</p>
+            <h3>Au cœur<br>de Bar-le-Duc.</h3>
+            <p class="address">3 rue du Four<br>55000 Bar-le-Duc</p>
+            <a class="direction-button" href="https://www.google.com/maps/search/?api=1&query=3+rue+du+Four+Bar-le-Duc" target="_blank" rel="noopener">Ouvrir l’itinéraire <span>↗</span></a>
+            <button id="copyAddress" class="copy-button" type="button">Copier l’adresse <span>▢</span></button>
+          </div>
+
+          <div class="visit-details">
+            <div class="visit-detail">
+              <p class="eyebrow accent">02 — UN COUP DE FIL</p>
+              <a class="phone" href="tel:+33329759550">03 29 75 95 50 <span>↗</span></a>
+              <p>Une table, un groupe, une question ?<br>Les demandes se font directement par téléphone.</p>
+              <a class="underline-link light" href="le-bocal.vcf" download>Enregistrer le contact <span>↓</span></a>
+            </div>
+
+            <div class="visit-detail">
+              <p class="eyebrow accent">03 — LES HORAIRES</p>
+              <h3>Avant de passer...</h3>
+              <p>Les horaires actualisés restent à confirmer. Un appel au bistrot vous permettra de vérifier l’ouverture et le service du jour.</p>
+              <a class="underline-link light" href="tel:+33329759550">Vérifier par téléphone <span>↗</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">Comment réserver une table ? <span>+</span></button>
+            <div class="faq-answer"><p>Pour le moment, les réservations se font directement par téléphone au 03 29 75 95 50.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">Une allergie ou une demande particulière ? <span>+</span></button>
+            <div class="faq-answer"><p>Contactez directement l’équipe avant votre venue afin de vérifier les possibilités.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">À propos de cette version du site <span>+</span></button>
+            <div class="faq-answer"><p>Cette version du site est actuellement en cours de développement.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <div class="footer-name">Le Bocal</div>
+      <span>BISTROT À BAR-LE-DUC</span>
+    </div>
+    <p class="footer-quote">Les bons moments commencent<br>souvent autour d’une table.</p>
+    <div class="footer-right">
+      <small>• &nbsp; VERSION DE PRÉSENTATION</small>
+      <a class="underline-link light" href="#top">Tout en haut <span>↑</span></a>
+    </div>
+  </footer>
+
+  <div class="modal" id="reservationModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay"></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" id="closeModal" type="button" aria-label="Fermer">×</button>
+      <p class="eyebrow">UNE TABLE AU BOCAL</p>
+      <h2 id="modal-title">Ça commence<br>par <em>un coup de fil.</em></h2>
+      <p>Appelez l’équipe pour connaître les disponibilités, réserver une table ou vérifier la carte du jour.</p>
+      <a href="tel:+33329759550" class="modal-call">Appeler le 03 29 75 95 50 <span>↗</span></a>
+      <button id="copyPhone" class="copy-button" type="button">Copier le numéro <span>▢</span></button>
+      <div class="modal-line"></div>
+      <small>Votre réservation sera confirmée par le bistrot lors de votre appel.</small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
